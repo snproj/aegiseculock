@@ -86,8 +86,6 @@
         dubious-password (read-line)]
     (= dubious-password retrieved-password)))
 
-;; (defn AEGISecureLock-MLProcess-password [filename])
-
 (defn reset-master-password []
   (println "Please enter old master password")
   (if (authenticate-login?)
@@ -150,7 +148,3 @@
 
 (defn -main [] (main-menu))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
